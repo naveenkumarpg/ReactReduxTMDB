@@ -1,8 +1,31 @@
-import React from 'react';
+import React, {Component, Fragment} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import Landing from './components/landing';
+import Detail from './components/detail';
+import Search from './components/search';
+
+
+
+export default class App extends Component{
+  render(){
+    return(
+      <Fragment>
+       <Switch>
+          <Route exact path='/index.html' exact component={Landing}/>
+          <Route exact path='/' exact component={Landing}/>
+          <Route path='/details/:string' component={Detail}/>
+          <Route exact={true} path={'/search/:string?'}  component={Search}/>
+      </Switch>
+      </Fragment>
+    )
+  }
+
+}
+
+ReactDOM.render((
+  <HashRouter>
+    <App />
+  </HashRouter>
+), document.getElementById('movieapp'))

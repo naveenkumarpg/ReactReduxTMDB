@@ -1,0 +1,28 @@
+{
+    "wip": [
+      "Learn React",
+      "Confirm meetings with clients/vendors",
+      "Addresses and contact info for clients",
+      "Flights",
+      "Purchase flight",
+      "Enroll in frequent flyer mileage program",
+      "Request in-flight meals for special dietary needs",
+      "Reserve rental car/transportation",
+      "Check auto insurance policy to ensure coverage on rental car",
+      "Hotel/Lodging",
+      "Reserve hotel room",
+      "Request smoking/non-smoking accommodations",
+      "Update immunizationsA"
+    ],
+    "done": [
+      "Notify co-workers and clients of your departure",
+      "Set emergency contacts",
+      "Set email auto-reply",
+      "Print out hard copies of documents",
+      "Presentation",
+      "For International Travel",
+      "Passport/visa",
+      "Travel Insurance",
+      "Exchange currency"
+    ]
+  }
